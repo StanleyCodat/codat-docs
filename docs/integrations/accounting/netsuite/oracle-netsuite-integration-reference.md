@@ -94,7 +94,6 @@ When pushing Bills to Oracle NetSuite:
 - The `status` property must be set to `Open`.
 - A bill can't be created from a purchase order.
 - NetSuite makes a distinction between `Expense` and `Item` line records in vendor bills. Codat validates whether a line item is an `Expense` or `Item` type based on the value of `lineItems.itemRef.id`. If this isn't populated, Codat treats the line item as an `Expense` type.
-- In NetSuite, when pulling Bills line items, the `taxAmount` and `taxRateRef` fields are not available because NetSuite does not provide information about which line item the tax relates to.
 
 ## Bill credit notes
 
